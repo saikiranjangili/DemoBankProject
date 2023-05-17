@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DemoBanking">
+
+    <listeners>
+        <listener class-name="org.example.utilites.Reports"/>
+    </listeners>
+    <parameter name="browser" value="chrome"/>
+    <test name="BankingApp test">
+        <classes>
+            <!--  <class name="org.example.testsCases.TC_LoginTest_001">
+              </class>
+              <class name="org.example.testsCases.TC_LoginTest_002">
+                  <parameter name="Sheet" value="Login"/>
+              </class>-->
+            <class name="org.example.testsCases.TC_AddCustomer_003"/>
+        </classes>
+    </test>
+</suite>
