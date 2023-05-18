@@ -2,7 +2,6 @@ package org.example.testsCases;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.example.utilites.ExcelUtilities;
 import org.example.utilites.ReadConfig;
 import org.example.utilites.Reports;
@@ -28,10 +27,6 @@ public class BaseClass extends Reports {
     public String Username = rConfig.getUserName();
     public String Password = rConfig.getPassword();
 
-    public static String randomNum() {
-        String randNumber = RandomStringUtils.randomNumeric(4);
-        return randNumber;
-    }
 
     @Parameters("browser")
     @BeforeClass
@@ -105,8 +100,5 @@ public class BaseClass extends Reports {
         return Customerdata;
     }
 
-    public String randomString() {
-        String randString = RandomStringUtils.randomAlphabetic(8);
-        return randString;
-    }
+
 }

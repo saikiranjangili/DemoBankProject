@@ -1,6 +1,8 @@
 package org.example.PageObjects;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.example.testsCases.BaseClass;
+import org.example.utilites.ExcelUtilities;
 import org.example.utilites.Reports;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -47,12 +49,20 @@ public class AddCustomerPage extends Reports {
     WebElement customerId;
     BaseClass bs = new BaseClass();
     WebDriver driver;
-
-    HomePage hm = new HomePage(driver);
+    ExcelUtilities xl = new ExcelUtilities();
 
     public AddCustomerPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
+    }
+
+    public static String randomNum() {
+        String randNumber = RandomStringUtils.randomNumeric(8);
+        return randNumber;
+    }
+
+    public static String randomString() {
+        return RandomStringUtils.randomAlphabetic(8);
     }
 
     public void addNewCustomer() throws IOException {
@@ -73,20 +83,22 @@ public class AddCustomerPage extends Reports {
         state.sendKeys(array[0][5]);
         pin.sendKeys(array[0][6]);
         mobile.sendKeys(array[0][7]);
-        email.sendKeys(array[0][8]);
+        email.sendKeys(AddCustomerPage.randomString() + "@gmail.com");
         password.sendKeys(array[0][9]);
 
         btnsubmit.click();
-
-
     }
 
-    public String customerId() throws InterruptedException {
+    public String customerId() throws InterruptedException, IOException {
 //        WebElement CussId = new WebDriverWait(driver, Duration.ofSeconds(10))
 //                .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr/td[contains(text(),'Customer ID')]/following::td[1]")));
         Thread.sleep(3000);
         WebElement CussId = driver.findElement(By.xpath("//tr/td[contains(text(),'Customer ID')]/following::td[1]"));
-        return CussId.getText();
+        String CustomerId = customerId.getText();
+        xl.setCellData("CusID", 1, 1, AddCustomerPage.randomString() + "@gmail.com");
+        xl.setCellData("CusID", 1, 3, CustomerId);
+
+        return CustomerId;
     }
 
     public void EditCustomer(String CusID) {
@@ -94,7 +106,6 @@ public class AddCustomerPage extends Reports {
         txtCusid.sendKeys(CusID);
         AccSubmit.click();
     }
-
 
     public void DeleteCustomer(String CusID) {
         txtCusid.sendKeys(CusID);

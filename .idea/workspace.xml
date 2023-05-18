@@ -5,29 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="615f7d44-f80e-4a9e-a4f7-3cca1daf7da2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Configurations/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extent-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/PageObjects/AddCustomerPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/PageObjects/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/PageObjects/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testsCases/BaseClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testsCases/TC_AddCustomer_003.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testsCases/TC_DeleteCustomer_006.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testsCases/TC_EditCustomer_005.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testsCases/TC_LoginTest_001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testsCases/TC_LoginTest_002.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/utilites/ExcelUtilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/utilites/ReadConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/utilites/Reports.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testData/Customer_Data.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawl.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/PageObjects/AddCustomerPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/PageObjects/AddCustomerPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/PageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/PageObjects/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testData/Login_Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testData/Login_Data.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testsCases/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testsCases/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testsCases/TC_AddCustomer_003.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testsCases/TC_AddCustomer_003.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testsCases/TC_DeleteCustomer_006.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testsCases/TC_DeleteCustomer_006.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testsCases/TC_LoginTest_001.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testsCases/TC_LoginTest_001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testsCases/TC_LoginTest_002.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testsCases/TC_LoginTest_002.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/utilites/ExcelUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/utilites/ExcelUtilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Test-Report-2023.05.17.23.47.55html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Test-Report-2023.05.17.23.48.12html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Test-Report-2023.05.17.23.49.08html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Test-Report-2023.05.17.23.51.35html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Test-Report-2023.05.17.23.52.56html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Test-Report-2023.05.18.00.00.22html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Test-Report-2023.05.18.00.10.31html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Test-Report-2023.05.18.00.18.51html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Test-Report-2023.05.18.00.20.04html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Test-Report-2023.05.18.00.22.06html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Test-Report-2023.05.18.00.22.52html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Test-Report-2023.05.18.00.26.09html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Test-Report-2023.05.18.00.28.48html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Test-Report-2023.05.18.00.30.49html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +81,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Testing/Workspace/DemoBankingProject/src/test/java/org/example/testData&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.47470102&quot;,
     &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
@@ -86,6 +91,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Testing\Workspace\DemoBankingProject\src\test\java\org\example\testData" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Testing\Workspace\DemoBankingProject" />
     </key>
@@ -136,7 +144,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TC_LoginTest_001.LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TC_DeleteCustomer_006" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoBankingProject" />
       <extension name="coverage">
         <pattern>
@@ -145,8 +153,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.testsCases" />
-      <option name="MAIN_CLASS_NAME" value="org.example.testsCases.TC_LoginTest_001" />
-      <option name="METHOD_NAME" value="LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testsCases.TC_DeleteCustomer_006" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC_DeleteCustomer_006.DeleteCustomerData" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DemoBankingProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.testsCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.testsCases" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testsCases.TC_DeleteCustomer_006" />
+      <option name="METHOD_NAME" value="DeleteCustomerData" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -157,9 +182,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.F:/Testing/Workspace/DemoBankingProject/testng.xml" />
+        <item itemvalue="TestNG.TC_DeleteCustomer_006" />
+        <item itemvalue="TestNG.TC_DeleteCustomer_006.DeleteCustomerData" />
         <item itemvalue="TestNG.TC_AddCustomer_003.customer_data" />
         <item itemvalue="TestNG.TC_AddCustomer_003" />
-        <item itemvalue="TestNG.TC_LoginTest_001.LoginTest" />
       </list>
     </recent_temporary>
   </component>

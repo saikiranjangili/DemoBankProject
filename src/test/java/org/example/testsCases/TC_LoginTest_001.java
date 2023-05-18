@@ -1,6 +1,7 @@
 package org.example.testsCases;
 
 import com.aventstack.extentreports.Status;
+import org.example.PageObjects.HomePage;
 import org.example.PageObjects.LoginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -19,6 +20,13 @@ public class TC_LoginTest_001 extends BaseClass {
         logger.log(Status.INFO, "Password entered");
 
         lp.clickLogin();
+
+        HomePage hm = new HomePage(driver);
+
+        if (hm.isAlertPresent()) {
+            driver.switchTo().alert().accept();
+        }
+
 
         //System.out.println(driver.getTitle());
 

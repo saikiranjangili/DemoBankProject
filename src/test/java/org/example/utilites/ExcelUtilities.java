@@ -21,6 +21,7 @@ public class ExcelUtilities {
 
     //path = TestBase.path;
     static String path = "src/test/java/org/example/testData/Login_Data.xlsx";
+    static String Cuspath = "src/test/java/org/example/testData/Customer_Data.xlsx";
 
     //    private final Object sheetname = null;
 //
@@ -99,14 +100,16 @@ public class ExcelUtilities {
 
     public void setCellData(String sheetname, int rownum, int cellnum, String data) throws IOException {
 
-        fis = new FileInputStream(path);
+        fis = new FileInputStream(Cuspath);
         workbook = new XSSFWorkbook(fis);
         sheet = workbook.getSheet(sheetname);
         row = sheet.getRow(rownum);
-        cell = row.getCell(cellnum);
+        // cell = row.getCell(cellnum);
+        cell = row.createCell(cellnum);
         cell.setCellValue(data);
+        fis.close();
 
-        fos = new FileOutputStream(path);
+        fos = new FileOutputStream(Cuspath);
         workbook.write(fos);
         workbook.close();
         fis.close();

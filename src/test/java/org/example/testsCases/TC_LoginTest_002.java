@@ -9,10 +9,9 @@ import java.io.IOException;
 
 
 public class TC_LoginTest_002 extends BaseClass {
-    
+
     @Test(dataProvider = "LoginData")
     public void Login_Parameterisation(String uname, String pwd, String Validation) throws InterruptedException, IOException {
-
 
         logger.log(Status.INFO, " The parameterization of Login is started with :" + Validation);
         LoginPage lp = new LoginPage(driver);

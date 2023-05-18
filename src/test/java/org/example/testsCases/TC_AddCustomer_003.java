@@ -9,33 +9,25 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 public class TC_AddCustomer_003 extends BaseClass {
+    public String CustomerID;
+
     @Test
     public void customer_data() throws IOException, InterruptedException {
-
         logger.log(Status.INFO, "The Test is started");
+        AddCustomerPage customerpage = new AddCustomerPage(driver);
+        HomePage homepage = new HomePage(driver);
+        LoginPage loginpage = new LoginPage(driver);
 
-        LoginPage lp = new LoginPage(driver);
-        lp.setUserName(Username);
-        lp.setPassword(Password);
-        lp.clickLogin();
-
-
+        TC_LoginTest_001 logintest = new TC_LoginTest_001();
+        logintest.LoginTest();
         logger.log(Status.INFO, "Login is successfull");
 
-        HomePage hm = new HomePage(driver);
-        AddCustomerPage ap = new AddCustomerPage(driver);
-        hm.clickNewCustomer();
-        ap.addNewCustomer();
+        homepage.clickNewCustomer();
+        customerpage.addNewCustomer();
         logger.log(Status.INFO, "New customer is added");
 
-        String CustomerID = ap.customerId();
+        CustomerID = customerpage.customerId();
         System.out.println("The Customer Id of the of newCustomer is " + CustomerID);
-
-        Thread.sleep(2000);
-        hm.clickDelCustomer();
-        ap.DeleteCustomer(CustomerID);
-        logger.log(Status.INFO, "The user is Deleted");
-
 
     }
 

@@ -8,12 +8,13 @@
     <parameter name="browser" value="chrome"/>
     <test name="BankingApp test">
         <classes>
-            <!--  <class name="org.example.testsCases.TC_LoginTest_001">
-              </class>
-              <class name="org.example.testsCases.TC_LoginTest_002">
-                  <parameter name="Sheet" value="Login"/>
-              </class>-->
+            <class name="org.example.testsCases.TC_LoginTest_001">
+            </class>
+            <class name="org.example.testsCases.TC_LoginTest_002">
+                <parameter name="Sheet" value="Login"/>
+            </class>
             <class name="org.example.testsCases.TC_AddCustomer_003"/>
+            <class name="org.example.testsCases.TC_DeleteCustomer_006"/>
         </classes>
     </test>
 </suite>
